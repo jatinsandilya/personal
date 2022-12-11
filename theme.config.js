@@ -26,8 +26,7 @@ export default {
             document.documentElement.classList.remove("light");
           }`
         }}
-      />
-      ;
+      ></script>
     </small>
   )
 }
