@@ -16,6 +16,18 @@ export default {
           }
         }
       `}</style>
+      <script
+        lang="javascript"
+        dangerouslySetInnerHTML={{
+          __html: `if (!window.localStorage.getItem("theme_default")) {
+            window.localStorage.setItem("theme", "dark");
+            window.localStorage.setItem("theme_default", "dark");
+            document.documentElement.classList.add("dark");
+            document.documentElement.classList.remove("light");
+          }`
+        }}
+      />
+      ;
     </small>
   )
 }
